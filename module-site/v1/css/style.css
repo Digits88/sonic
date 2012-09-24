@@ -1,0 +1,25 @@
+/* 
+    Document   : style
+    Created on : Apr 23, 2012, 3:50:23 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+.item {
+    width: 220px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    background-color: #333;
+    border-radius: 50px;
+}

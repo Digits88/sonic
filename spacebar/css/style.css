@@ -1,0 +1,21 @@
+/* 
+    Document   : style
+    Created on : Sep 24, 2012, 3:54:41 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background-color: black;
+}
+
+#wrap {
+    width: 1024px;
+    position: relative;
+    margin: 0 auto;
+}

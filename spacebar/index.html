@@ -1,0 +1,88 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script>
+            (function($) {
+                $(window).load(function() {
+                    
+                    // variables
+                    var video = $('#video')[0];
+                    var timeUpdate;
+                    
+                    // events
+                    $(window).on('keydown', function(evt) {
+                        if(evt.keyCode == 32) {
+                            evt.preventDefault();
+                            spacebar(evt);
+                        }
+                    });
+                    
+                    // helpers
+                    var spacebar = function(evt) {
+                        
+                        // generate a random num
+                        var rand = (Math.floor(Math.abs(Math.random * 3) + 1));
+                        
+                        // skip to random point in video
+                        switch(rand) {
+                            case 1:
+                                video.currentTime = 13;
+                                video.play();
+                                listenForEndSegment(15);
+                                break;
+                            case 2:
+                                video.currentTime = 5;
+                                video.play();
+                                listenForEndSegment(8);
+                                break;
+                            case 3:
+                                video.currentTime = 7;
+                                video.play();
+                                listenForEndSegment(13);
+                                break;
+                        }
+                        
+                    };
+                    
+                    var setEndSegmentListener = function(endTime) {
+                        timeUpdate = video.addEventListener('timeupdate', function(e) {
+                            listenEndSegment(e, endTime);
+                        }, false);
+                    };
+                    
+                    var listenEndSegment = function(evt, endTime) {
+                        if(e.target.currentTime == endTime) {
+                            video.pause();
+                            endTimeUpdate();
+                        }
+                    };
+                    
+                    var endTimeUpdate = function() {
+                        video.removeEventListener('timeupdate', )
+                    };
+                });
+            })(jQuery);
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <video id="video" width="1024" height="576" controls="controls">
+                <source src="videos/splash.mp4" type="video/mp4">
+                <source src="videos/splash.ogv" type="video/ogg">
+                <source src="videos/splash.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </body>
+</html>
