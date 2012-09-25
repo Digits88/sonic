@@ -25,31 +25,37 @@ and open the template in the editor.
                         if(evt.keyCode == 32) {
                             evt.preventDefault();
                             spacebar(evt);
+                            
                         }
                     });
                     
                     // helpers
                     var spacebar = function(evt) {
-                        
+
                         // generate a random num
-                        var rand = (Math.floor(Math.abs(Math.random * 3) + 1));
+                        var rand = Math.floor((Math.random()*3)+1);;
+                        
+                        console.log(rand);
                         
                         // skip to random point in video
                         switch(rand) {
                             case 1:
-                                video.currentTime = 13;
+                                console.dir(video);
+                                video.currentTime = 0;
+                                setEndSegmentListener(3);
                                 video.play();
-                                listenForEndSegment(15);
                                 break;
                             case 2:
-                                video.currentTime = 5;
+                                console.dir(video);
+                                video.currentTime = 3;
+                                setEndSegmentListener(6);
                                 video.play();
-                                listenForEndSegment(8);
                                 break;
                             case 3:
-                                video.currentTime = 7;
+                                console.dir(video);
+                                video.currentTime = 17;
+                                setEndSegmentListener(21);
                                 video.play();
-                                listenForEndSegment(13);
                                 break;
                         }
                         
@@ -57,20 +63,15 @@ and open the template in the editor.
                     
                     var setEndSegmentListener = function(endTime) {
                         timeUpdate = video.addEventListener('timeupdate', function(e) {
-                            listenEndSegment(e, endTime);
+                            console.log("in addeventlistener, e:" + Math.floor(e.target.currentTime) + " endTime " + endTime);
+                            if(Math.floor(e.target.currentTime) == endTime) {
+                                console.log("in if statement");
+                                video.pause();
+                                this.removeEventListener('timeupdate', arguments.callee, false);
+                            }
                         }, false);
                     };
                     
-                    var listenEndSegment = function(evt, endTime) {
-                        if(e.target.currentTime == endTime) {
-                            video.pause();
-                            endTimeUpdate();
-                        }
-                    };
-                    
-                    var endTimeUpdate = function() {
-                        video.removeEventListener('timeupdate', )
-                    };
                 });
             })(jQuery);
         </script>
@@ -78,9 +79,9 @@ and open the template in the editor.
     <body>
         <div id="wrap">
             <video id="video" width="1024" height="576" controls="controls">
-                <source src="videos/splash.mp4" type="video/mp4">
-                <source src="videos/splash.ogv" type="video/ogg">
-                <source src="videos/splash.webm" type="video/webm">
+                <source src="videos/guys.mp4" type="video/mp4">
+                <source src="videos/guys.ogv" type="video/ogg">
+                <source src="videos/guys.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
