@@ -20,58 +20,190 @@ and open the template in the editor.
                     var video = $('#video')[0];
                     var timeUpdate;
                     
-                    // events
+                    var segments = {
+                        1: {
+                            name: 'deja vu',
+                            start: 31.007,
+                            end: 34.003,
+                            used: false
+                        },
+                        2: {
+                            name: 'velcro',
+                            start: 36.003,
+                            end: 38.011,
+                            used: false
+                        },
+                        3: {
+                            name: 'deja vu2',
+                            start: 40.014,
+                            end: 42.018,
+                            used: false
+                        },
+                        4: {
+                            name: 'turtlenecks',
+                            start: 44.015,
+                            end: 50.009,
+                            used: false
+                        },
+                        5: {
+                            name: 'unicycles',
+                            start: 52.009,
+                            end: 53.012,
+                            used: false
+                        },
+                        6: {
+                            name: 'mechanical pencils',
+                            start: 55.011,
+                            end: 60.019,
+                            used: false
+                        },
+                        7: {
+                            name: 'egg yellows',
+                            start: 62.018,
+                            end: 67.00,
+                            used: false
+                        },
+                        8: {
+                            name: 'hole in underpants',
+                            start: 68.023,
+                            end: 73.021,
+                            used: false
+                        },
+                        9: {
+                            name: 'english',
+                            start: 75.022,
+                            end: 86.00,
+                            used: false
+                        },
+                        10: {
+                            name: 'lufas',
+                            start: 88.001,
+                            end: 89.008,
+                            used: false
+                        },
+                        11: {
+                            name: 'babies',
+                            start: 91.008,
+                            end: 95.009,
+                            used: false
+                        },
+                        12: {
+                            name: 'omaha',
+                            start: 97.010,
+                            end: 101.017,
+                            used: false
+                        },
+                        13: {
+                            name: 'beanah',
+                            start: 103.017,
+                            end: 110.006,
+                            used: false
+                        },
+                        14: {
+                            name: 'puppies',
+                            start: 112.007,
+                            end: 113.012,
+                            used: false
+                        },
+                        15: {
+                            name: 'quench not clench',
+                            start: 115.010,
+                            end: 119.012,
+                            used: false
+                        },
+                        16: {
+                            name: 'moving sidewalks',
+                            start: 121.007,
+                            end: 127.019,
+                            used: false
+                        },
+                        17: {
+                            name: 'plywood',
+                            start: 129.020,
+                            end: 131.016,
+                            used: false
+                        },
+                        18: {
+                            name: 'canadian',
+                            start: 133.017,
+                            end: 136.015,
+                            used: false
+                        },
+                        19: {
+                            name: 'deja vu3',
+                            start: 138.015,
+                            end: 143.012,
+                            used: false
+                        }
+                    };
+                    
+                    var segmentCount = 1;
+                    
+/*	--------------------------------------------------
+	Events
+	-------------------------------------------------- */
                     $(window).on('keydown', function(evt) {
                         if(evt.keyCode == 32) {
                             evt.preventDefault();
                             spacebar(evt);
-                            
+                            segmentCount++;
                         }
                     });
                     
-                    // helpers
+/*	--------------------------------------------------
+	Helpers
+	-------------------------------------------------- */
+    
+                    var init = function() {
+                        if(typeof video != "undefined") {
+                            // play the video to buffer and then pause it
+                            var seg = {
+                                end: 28
+                            };
+                            
+                            setEndSegmentListener(seg);
+                            
+                            video.play();
+                        }
+                    };
+    
                     var spacebar = function(evt) {
 
-                        // generate a random num
-                        var rand = Math.floor((Math.random()*3)+1);;
-                        
-                        console.log(rand);
-                        
-                        // skip to random point in video
-                        switch(rand) {
-                            case 1:
-                                console.dir(video);
-                                video.currentTime = 0;
-                                setEndSegmentListener(3);
-                                video.play();
-                                break;
-                            case 2:
-                                console.dir(video);
-                                video.currentTime = 3;
-                                setEndSegmentListener(6);
-                                video.play();
-                                break;
-                            case 3:
-                                console.dir(video);
-                                video.currentTime = 17;
-                                setEndSegmentListener(21);
-                                video.play();
-                                break;
+//                        var rand = Math.floor((Math.random()*19)+1);;
+                        if(segmentCount > 19) {
+                            var rand = Math.floor((Math.random()*19)+1);
+                        } else {
+                            var rand = segmentCount;
                         }
+                        
+//                        if(!segments[rand].used) {
+                            video.currentTime = segments[rand].start;
+                            setEndSegmentListener(segments[rand]);
+                            video.play();
+//                        }
                         
                     };
                     
-                    var setEndSegmentListener = function(endTime) {
+                    var setEndSegmentListener = function(seg) {
+                        
+                        var endTime = seg.end;
+                        
                         timeUpdate = video.addEventListener('timeupdate', function(e) {
-                            console.log("in addeventlistener, e:" + Math.floor(e.target.currentTime) + " endTime " + endTime);
-                            if(Math.floor(e.target.currentTime) == endTime) {
-                                console.log("in if statement");
+//                            console.log("in addeventlistener, e:" + e.target.currentTime + " endTime " + endTime);
+                            
+                            
+                            if( (e.target.currentTime >= (endTime + 0.8)) && (e.target.currentTime <= (endTime + 1.2)) ) {
+//                                con sole.log("in if statement");
+                                seg.used = true;
                                 video.pause();
                                 this.removeEventListener('timeupdate', arguments.callee, false);
                             }
+                            
                         }, false);
                     };
                     
+                    
+                    init();
                 });
             })(jQuery);
         </script>
@@ -79,9 +211,9 @@ and open the template in the editor.
     <body>
         <div id="wrap">
             <video id="video" width="1024" height="576" controls="controls">
-                <source src="videos/guys.mp4" type="video/mp4">
-                <source src="videos/guys.ogv" type="video/ogg">
-                <source src="videos/guys.webm" type="video/webm">
+                <source src="videos/spacebar.mp4" type="video/mp4">
+                <source src="videos/spacebar.ogv" type="video/ogg">
+                <source src="videos/spacebar.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
