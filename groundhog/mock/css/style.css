@@ -1,0 +1,78 @@
+/* 
+    Document   : style
+    Created on : Dec 15, 2012, 3:28:38 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    
+}
+
+h1, h2, p {
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: 1.57;
+    color: #808080;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 1.57;
+    color: #808080;
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.54;
+    color: #666;
+}
+
+a {
+    color: #15c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#wrap {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    clear: both;
+    width: 100%;
+    
+}
+
+section, aside {
+    padding: 20px;
+}
+
+section {
+    width: 625px;
+    float: left;
+    
+}
+
+aside {
+    width: 318px;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
