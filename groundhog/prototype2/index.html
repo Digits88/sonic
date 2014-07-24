@@ -1,0 +1,78 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>Ground Hog Day</h1>
+            </header>
+            <section>
+                <article>
+<!--                    <iframe width="625" height="468" src="http://www.youtube.com/embed/A7n_G_Y3qAo" frameborder="0" allowfullscreen></iframe>-->
+                    <iframe src="http://new.livestream.com/accounts/2275923/events/1737870/feed_embed?width=620&height=468" width="620" height="468" frameborder="0" id="feed-embed-stand-alone"> </iframe>
+                    
+                </article>
+                <article>
+                    <h2>Ground Hog Day: Filler Text</h2>
+                    <p>A weather man is reluctantly sent to cover a story about a weather forecasting "rat" (as he calls it). This is his fourth year on the story, and he makes no effort to hide his frustration. On awaking the 'following' day he discovers that it's Groundhog Day again, and again, and again. First he uses this to his advantage, then comes the realisation that he is doomed to spend the rest of eternity in the same place, seeing the same people do the same thing EVERY day.</p>
+                    <p>Written by <a href="http://www.imdb.com/title/tt0107048/">Rob Hartill</a></p>
+                </article>
+            </section>
+            <aside>
+                <!-- START: Livefyre Embed -->
+                <div id="livefyre-comments"></div>
+                <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+                <script type="text/javascript">
+                (function () {
+                    var articleId = fyre.conv.load.makeArticleId(null);
+                    fyre.conv.load({}, [{
+                        el: 'livefyre-comments',
+                        network: "livefyre.com",
+                        siteId: "318891",
+                        articleId: articleId,
+                        signed: false,
+                        collectionMeta: {
+                            articleId: articleId,
+                            url: fyre.conv.load.makeCollectionUrl(),
+                        }
+                    }], function() {});
+                }());
+                </script>
+                <!-- END: Livefyre Embed -->
+            </aside>
+            <footer>
+                
+            </footer>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            (function($) {
+                $(window).load(function() {
+                    // this could get annoying to users because javascript resets everything - not usable
+//                    setTimeout(function() {
+//                        DISQUS.reset({
+//                            reload: true,
+//                            config: function () {  
+//                                this.page.identifier = 'newid1';
+//                                this.page.url = 'http://localhost.com/#!newid1';
+//                            }
+//                        });
+//                    }, 5000);
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

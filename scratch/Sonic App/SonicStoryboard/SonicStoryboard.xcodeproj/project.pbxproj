@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BD89D3A15A788230018FBC2 /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD89D3915A788230018FBC2 /* CouponViewController.m */; };
+		2BDB4A2D15A6BF6600942DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDB4A2C15A6BF6600942DAE /* UIKit.framework */; };
+		2BDB4A2F15A6BF6600942DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDB4A2E15A6BF6600942DAE /* Foundation.framework */; };
+		2BDB4A3115A6BF6600942DAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDB4A3015A6BF6600942DAE /* CoreGraphics.framework */; };
+		2BDB4A3715A6BF6600942DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A3515A6BF6600942DAE /* InfoPlist.strings */; };
+		2BDB4A3915A6BF6600942DAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB4A3815A6BF6600942DAE /* main.m */; };
+		2BDB4A3D15A6BF6600942DAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB4A3C15A6BF6600942DAE /* AppDelegate.m */; };
+		2BDB4A4015A6BF6600942DAE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A3E15A6BF6600942DAE /* MainStoryboard.storyboard */; };
+		2BDB4A4315A6BF6600942DAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4215A6BF6600942DAE /* ViewController.m */; };
+		2BDB4A5A15A6BFF900942DAE /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4A15A6BFF900942DAE /* camera.png */; };
+		2BDB4A5B15A6BFF900942DAE /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4B15A6BFF900942DAE /* camera@2x.png */; };
+		2BDB4A5C15A6BFF900942DAE /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4C15A6BFF900942DAE /* card.png */; };
+		2BDB4A5D15A6BFF900942DAE /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4D15A6BFF900942DAE /* card@2x.png */; };
+		2BDB4A5E15A6BFF900942DAE /* checkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4E15A6BFF900942DAE /* checkin.png */; };
+		2BDB4A5F15A6BFF900942DAE /* checkin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A4F15A6BFF900942DAE /* checkin@2x.png */; };
+		2BDB4A6015A6BFF900942DAE /* coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5015A6BFF900942DAE /* coupon.png */; };
+		2BDB4A6115A6BFF900942DAE /* coupon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5115A6BFF900942DAE /* coupon@2x.png */; };
+		2BDB4A6215A6BFF900942DAE /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5215A6BFF900942DAE /* intro.png */; };
+		2BDB4A6315A6BFF900942DAE /* intro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5315A6BFF900942DAE /* intro@2x.png */; };
+		2BDB4A6415A6BFF900942DAE /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5415A6BFF900942DAE /* main.png */; };
+		2BDB4A6515A6BFF900942DAE /* main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5515A6BFF900942DAE /* main@2x.png */; };
+		2BDB4A6615A6BFF900942DAE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5615A6BFF900942DAE /* menu.png */; };
+		2BDB4A6715A6BFF900942DAE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5715A6BFF900942DAE /* menu@2x.png */; };
+		2BDB4A6815A6BFF900942DAE /* promotions.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5815A6BFF900942DAE /* promotions.png */; };
+		2BDB4A6915A6BFF900942DAE /* promotions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDB4A5915A6BFF900942DAE /* promotions@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BD89D3815A788230018FBC2 /* CouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
+		2BD89D3915A788230018FBC2 /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
+		2BDB4A2815A6BF6600942DAE /* SonicStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonicStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDB4A2C15A6BF6600942DAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BDB4A2E15A6BF6600942DAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BDB4A3015A6BF6600942DAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BDB4A3415A6BF6600942DAE /* SonicStoryboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonicStoryboard-Info.plist"; sourceTree = "<group>"; };
+		2BDB4A3615A6BF6600942DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BDB4A3815A6BF6600942DAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BDB4A3A15A6BF6600942DAE /* SonicStoryboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SonicStoryboard-Prefix.pch"; sourceTree = "<group>"; };
+		2BDB4A3B15A6BF6600942DAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BDB4A3C15A6BF6600942DAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BDB4A3F15A6BF6600942DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2BDB4A4115A6BF6600942DAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BDB4A4215A6BF6600942DAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BDB4A4A15A6BFF900942DAE /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		2BDB4A4B15A6BFF900942DAE /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		2BDB4A4C15A6BFF900942DAE /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		2BDB4A4D15A6BFF900942DAE /* card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card@2x.png"; sourceTree = "<group>"; };
+		2BDB4A4E15A6BFF900942DAE /* checkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkin.png; sourceTree = "<group>"; };
+		2BDB4A4F15A6BFF900942DAE /* checkin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkin@2x.png"; sourceTree = "<group>"; };
+		2BDB4A5015A6BFF900942DAE /* coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon.png; sourceTree = "<group>"; };
+		2BDB4A5115A6BFF900942DAE /* coupon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupon@2x.png"; sourceTree = "<group>"; };
+		2BDB4A5215A6BFF900942DAE /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro.png; sourceTree = "<group>"; };
+		2BDB4A5315A6BFF900942DAE /* intro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro@2x.png"; sourceTree = "<group>"; };
+		2BDB4A5415A6BFF900942DAE /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		2BDB4A5515A6BFF900942DAE /* main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main@2x.png"; sourceTree = "<group>"; };
+		2BDB4A5615A6BFF900942DAE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		2BDB4A5715A6BFF900942DAE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		2BDB4A5815A6BFF900942DAE /* promotions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = promotions.png; sourceTree = "<group>"; };
+		2BDB4A5915A6BFF900942DAE /* promotions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "promotions@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BDB4A2515A6BF6600942DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BDB4A2D15A6BF6600942DAE /* UIKit.framework in Frameworks */,
+				2BDB4A2F15A6BF6600942DAE /* Foundation.framework in Frameworks */,
+				2BDB4A3115A6BF6600942DAE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BDB4A1D15A6BF6600942DAE = {
+			isa = PBXGroup;
+			children = (
+				2BDB4A3215A6BF6600942DAE /* SonicPrototype */,
+				2BDB4A2B15A6BF6600942DAE /* Frameworks */,
+				2BDB4A2915A6BF6600942DAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BDB4A2915A6BF6600942DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BDB4A2815A6BF6600942DAE /* SonicStoryboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BDB4A2B15A6BF6600942DAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BDB4A2C15A6BF6600942DAE /* UIKit.framework */,
+				2BDB4A2E15A6BF6600942DAE /* Foundation.framework */,
+				2BDB4A3015A6BF6600942DAE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BDB4A3215A6BF6600942DAE /* SonicPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				2BDB4A3B15A6BF6600942DAE /* AppDelegate.h */,
+				2BDB4A3C15A6BF6600942DAE /* AppDelegate.m */,
+				2BD89D3815A788230018FBC2 /* CouponViewController.h */,
+				2BD89D3915A788230018FBC2 /* CouponViewController.m */,
+				2BDB4A3E15A6BF6600942DAE /* MainStoryboard.storyboard */,
+				2BDB4A4115A6BF6600942DAE /* ViewController.h */,
+				2BDB4A4215A6BF6600942DAE /* ViewController.m */,
+				2BDB4A3315A6BF6600942DAE /* Supporting Files */,
+			);
+			path = SonicPrototype;
+			sourceTree = "<group>";
+		};
+		2BDB4A3315A6BF6600942DAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BDB4A4915A6BFF900942DAE /* finished */,
+				2BDB4A3415A6BF6600942DAE /* SonicStoryboard-Info.plist */,
+				2BDB4A3515A6BF6600942DAE /* InfoPlist.strings */,
+				2BDB4A3815A6BF6600942DAE /* main.m */,
+				2BDB4A3A15A6BF6600942DAE /* SonicStoryboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BDB4A4915A6BFF900942DAE /* finished */ = {
+			isa = PBXGroup;
+			children = (
+				2BDB4A4A15A6BFF900942DAE /* camera.png */,
+				2BDB4A4B15A6BFF900942DAE /* camera@2x.png */,
+				2BDB4A4C15A6BFF900942DAE /* card.png */,
+				2BDB4A4D15A6BFF900942DAE /* card@2x.png */,
+				2BDB4A4E15A6BFF900942DAE /* checkin.png */,
+				2BDB4A4F15A6BFF900942DAE /* checkin@2x.png */,
+				2BDB4A5015A6BFF900942DAE /* coupon.png */,
+				2BDB4A5115A6BFF900942DAE /* coupon@2x.png */,
+				2BDB4A5215A6BFF900942DAE /* intro.png */,
+				2BDB4A5315A6BFF900942DAE /* intro@2x.png */,
+				2BDB4A5415A6BFF900942DAE /* main.png */,
+				2BDB4A5515A6BFF900942DAE /* main@2x.png */,
+				2BDB4A5615A6BFF900942DAE /* menu.png */,
+				2BDB4A5715A6BFF900942DAE /* menu@2x.png */,
+				2BDB4A5815A6BFF900942DAE /* promotions.png */,
+				2BDB4A5915A6BFF900942DAE /* promotions@2x.png */,
+			);
+			path = finished;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BDB4A2715A6BF6600942DAE /* SonicStoryboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BDB4A4615A6BF6600942DAE /* Build configuration list for PBXNativeTarget "SonicStoryboard" */;
+			buildPhases = (
+				2BDB4A2415A6BF6600942DAE /* Sources */,
+				2BDB4A2515A6BF6600942DAE /* Frameworks */,
+				2BDB4A2615A6BF6600942DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonicStoryboard;
+			productName = SonicPrototype;
+			productReference = 2BDB4A2815A6BF6600942DAE /* SonicStoryboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BDB4A1F15A6BF6600942DAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2BDB4A2215A6BF6600942DAE /* Build configuration list for PBXProject "SonicStoryboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BDB4A1D15A6BF6600942DAE;
+			productRefGroup = 2BDB4A2915A6BF6600942DAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BDB4A2715A6BF6600942DAE /* SonicStoryboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BDB4A2615A6BF6600942DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BDB4A3715A6BF6600942DAE /* InfoPlist.strings in Resources */,
+				2BDB4A4015A6BF6600942DAE /* MainStoryboard.storyboard in Resources */,
+				2BDB4A5A15A6BFF900942DAE /* camera.png in Resources */,
+				2BDB4A5B15A6BFF900942DAE /* camera@2x.png in Resources */,
+				2BDB4A5C15A6BFF900942DAE /* card.png in Resources */,
+				2BDB4A5D15A6BFF900942DAE /* card@2x.png in Resources */,
+				2BDB4A5E15A6BFF900942DAE /* checkin.png in Resources */,
+				2BDB4A5F15A6BFF900942DAE /* checkin@2x.png in Resources */,
+				2BDB4A6015A6BFF900942DAE /* coupon.png in Resources */,
+				2BDB4A6115A6BFF900942DAE /* coupon@2x.png in Resources */,
+				2BDB4A6215A6BFF900942DAE /* intro.png in Resources */,
+				2BDB4A6315A6BFF900942DAE /* intro@2x.png in Resources */,
+				2BDB4A6415A6BFF900942DAE /* main.png in Resources */,
+				2BDB4A6515A6BFF900942DAE /* main@2x.png in Resources */,
+				2BDB4A6615A6BFF900942DAE /* menu.png in Resources */,
+				2BDB4A6715A6BFF900942DAE /* menu@2x.png in Resources */,
+				2BDB4A6815A6BFF900942DAE /* promotions.png in Resources */,
+				2BDB4A6915A6BFF900942DAE /* promotions@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BDB4A2415A6BF6600942DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BDB4A3915A6BF6600942DAE /* main.m in Sources */,
+				2BDB4A3D15A6BF6600942DAE /* AppDelegate.m in Sources */,
+				2BDB4A4315A6BF6600942DAE /* ViewController.m in Sources */,
+				2BD89D3A15A788230018FBC2 /* CouponViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BDB4A3515A6BF6600942DAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BDB4A3615A6BF6600942DAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BDB4A3E15A6BF6600942DAE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BDB4A3F15A6BF6600942DAE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BDB4A4415A6BF6600942DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos6.1;
+			};
+			name = Debug;
+		};
+		2BDB4A4515A6BF6600942DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos6.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BDB4A4715A6BF6600942DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicPrototype/SonicStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "SonicPrototype/SonicStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = SonicStoryboard;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BDB4A4815A6BF6600942DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicPrototype/SonicStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "SonicPrototype/SonicStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = SonicStoryboard;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BDB4A2215A6BF6600942DAE /* Build configuration list for PBXProject "SonicStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BDB4A4415A6BF6600942DAE /* Debug */,
+				2BDB4A4515A6BF6600942DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BDB4A4615A6BF6600942DAE /* Build configuration list for PBXNativeTarget "SonicStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BDB4A4715A6BF6600942DAE /* Debug */,
+				2BDB4A4815A6BF6600942DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BDB4A1F15A6BF6600942DAE /* Project object */;
+}

@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B1E2CBE15A978520009D951 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E2CBD15A978520009D951 /* UIKit.framework */; };
+		2B1E2CC015A978520009D951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E2CBF15A978520009D951 /* Foundation.framework */; };
+		2B1E2CC215A978520009D951 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E2CC115A978520009D951 /* CoreGraphics.framework */; };
+		2B1E2CC815A978520009D951 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E2CC615A978520009D951 /* InfoPlist.strings */; };
+		2B1E2CCA15A978520009D951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E2CC915A978520009D951 /* main.m */; };
+		2B1E2CCE15A978520009D951 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E2CCD15A978520009D951 /* AppDelegate.m */; };
+		2B1E2CD115A978520009D951 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E2CCF15A978520009D951 /* MainStoryboard.storyboard */; };
+		2B1E2CD415A978520009D951 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E2CD315A978520009D951 /* ViewController.m */; };
+		2B1E2CE015A978990009D951 /* ScratchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E2CDF15A978990009D951 /* ScratchViewController.m */; };
+		2B1E2CE315A97AB00009D951 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E2CE115A97AB00009D951 /* camera.png */; };
+		2B1E2CE415A97AB00009D951 /* coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E2CE215A97AB00009D951 /* coupon.png */; };
+		2B1E2CEB15A97C510009D951 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E2CEA15A97C510009D951 /* CameraViewController.m */; };
+		2B76D2B215A988150051E308 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D29E15A988150051E308 /* camera.png */; };
+		2B76D2B315A988150051E308 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D29F15A988150051E308 /* camera@2x.png */; };
+		2B76D2B415A988150051E308 /* camera_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A015A988150051E308 /* camera_overlay.png */; };
+		2B76D2B515A988150051E308 /* camera_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A115A988150051E308 /* camera_overlay@2x.png */; };
+		2B76D2B615A988150051E308 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A215A988150051E308 /* card.png */; };
+		2B76D2B715A988150051E308 /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A315A988150051E308 /* card@2x.png */; };
+		2B76D2B815A988150051E308 /* coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A415A988150051E308 /* coupon.png */; };
+		2B76D2B915A988150051E308 /* coupon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A515A988150051E308 /* coupon@2x.png */; };
+		2B76D2BA15A988150051E308 /* coupon_buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A615A988150051E308 /* coupon_buttons.png */; };
+		2B76D2BB15A988150051E308 /* coupon_buttons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A715A988150051E308 /* coupon_buttons@2x.png */; };
+		2B76D2BC15A988150051E308 /* coupons.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A815A988150051E308 /* coupons.png */; };
+		2B76D2BD15A988150051E308 /* coupons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2A915A988150051E308 /* coupons@2x.png */; };
+		2B76D2BE15A988150051E308 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2AA15A988150051E308 /* home.png */; };
+		2B76D2BF15A988150051E308 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2AB15A988150051E308 /* home@2x.png */; };
+		2B76D2C015A988150051E308 /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2AC15A988150051E308 /* intro.png */; };
+		2B76D2C115A988150051E308 /* intro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2AD15A988150051E308 /* intro@2x.png */; };
+		2B76D2C215A988150051E308 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2AE15A988150051E308 /* map.png */; };
+		2B76D2C315A988150051E308 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2AF15A988150051E308 /* map@2x.png */; };
+		2B76D2C415A988150051E308 /* map_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2B015A988150051E308 /* map_details.png */; };
+		2B76D2C515A988150051E308 /* map_details@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B76D2B115A988150051E308 /* map_details@2x.png */; };
+		2B76D2C915A991EB0051E308 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B76D2C815A991EB0051E308 /* HomeViewController.m */; };
+		2B76D2CC15A999FE0051E308 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B76D2CB15A999FE0051E308 /* MapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B1E2CB915A978520009D951 /* SonicScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonicScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1E2CBD15A978520009D951 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B1E2CBF15A978520009D951 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B1E2CC115A978520009D951 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B1E2CC515A978520009D951 /* SonicScratch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonicScratch-Info.plist"; sourceTree = "<group>"; };
+		2B1E2CC715A978520009D951 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B1E2CC915A978520009D951 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B1E2CCB15A978520009D951 /* SonicScratch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SonicScratch-Prefix.pch"; sourceTree = "<group>"; };
+		2B1E2CCC15A978520009D951 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B1E2CCD15A978520009D951 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B1E2CD015A978520009D951 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2B1E2CD215A978520009D951 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B1E2CD315A978520009D951 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B1E2CDE15A978990009D951 /* ScratchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScratchViewController.h; sourceTree = "<group>"; };
+		2B1E2CDF15A978990009D951 /* ScratchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScratchViewController.m; sourceTree = "<group>"; };
+		2B1E2CE115A97AB00009D951 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		2B1E2CE215A97AB00009D951 /* coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon.png; sourceTree = "<group>"; };
+		2B1E2CE915A97C510009D951 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		2B1E2CEA15A97C510009D951 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		2B76D29E15A988150051E308 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		2B76D29F15A988150051E308 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		2B76D2A015A988150051E308 /* camera_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_overlay.png; sourceTree = "<group>"; };
+		2B76D2A115A988150051E308 /* camera_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_overlay@2x.png"; sourceTree = "<group>"; };
+		2B76D2A215A988150051E308 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		2B76D2A315A988150051E308 /* card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card@2x.png"; sourceTree = "<group>"; };
+		2B76D2A415A988150051E308 /* coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon.png; sourceTree = "<group>"; };
+		2B76D2A515A988150051E308 /* coupon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupon@2x.png"; sourceTree = "<group>"; };
+		2B76D2A615A988150051E308 /* coupon_buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon_buttons.png; sourceTree = "<group>"; };
+		2B76D2A715A988150051E308 /* coupon_buttons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupon_buttons@2x.png"; sourceTree = "<group>"; };
+		2B76D2A815A988150051E308 /* coupons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupons.png; sourceTree = "<group>"; };
+		2B76D2A915A988150051E308 /* coupons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons@2x.png"; sourceTree = "<group>"; };
+		2B76D2AA15A988150051E308 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		2B76D2AB15A988150051E308 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		2B76D2AC15A988150051E308 /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro.png; sourceTree = "<group>"; };
+		2B76D2AD15A988150051E308 /* intro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro@2x.png"; sourceTree = "<group>"; };
+		2B76D2AE15A988150051E308 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		2B76D2AF15A988150051E308 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		2B76D2B015A988150051E308 /* map_details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_details.png; sourceTree = "<group>"; };
+		2B76D2B115A988150051E308 /* map_details@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_details@2x.png"; sourceTree = "<group>"; };
+		2B76D2C715A991EB0051E308 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2B76D2C815A991EB0051E308 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2B76D2CA15A999FE0051E308 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2B76D2CB15A999FE0051E308 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B1E2CB615A978520009D951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1E2CBE15A978520009D951 /* UIKit.framework in Frameworks */,
+				2B1E2CC015A978520009D951 /* Foundation.framework in Frameworks */,
+				2B1E2CC215A978520009D951 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B1E2CAE15A978520009D951 = {
+			isa = PBXGroup;
+			children = (
+				2B1E2CC315A978520009D951 /* SonicScratch */,
+				2B1E2CBC15A978520009D951 /* Frameworks */,
+				2B1E2CBA15A978520009D951 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B1E2CBA15A978520009D951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E2CB915A978520009D951 /* SonicScratch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B1E2CBC15A978520009D951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E2CBD15A978520009D951 /* UIKit.framework */,
+				2B1E2CBF15A978520009D951 /* Foundation.framework */,
+				2B1E2CC115A978520009D951 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B1E2CC315A978520009D951 /* SonicScratch */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E2CCC15A978520009D951 /* AppDelegate.h */,
+				2B1E2CCD15A978520009D951 /* AppDelegate.m */,
+				2B1E2CCF15A978520009D951 /* MainStoryboard.storyboard */,
+				2B76D2CA15A999FE0051E308 /* MapViewController.h */,
+				2B76D2CB15A999FE0051E308 /* MapViewController.m */,
+				2B76D2C715A991EB0051E308 /* HomeViewController.h */,
+				2B76D2C815A991EB0051E308 /* HomeViewController.m */,
+				2B1E2CE915A97C510009D951 /* CameraViewController.h */,
+				2B1E2CEA15A97C510009D951 /* CameraViewController.m */,
+				2B1E2CDE15A978990009D951 /* ScratchViewController.h */,
+				2B1E2CDF15A978990009D951 /* ScratchViewController.m */,
+				2B1E2CD215A978520009D951 /* ViewController.h */,
+				2B1E2CD315A978520009D951 /* ViewController.m */,
+				2B1E2CC415A978520009D951 /* Supporting Files */,
+			);
+			path = SonicScratch;
+			sourceTree = "<group>";
+		};
+		2B1E2CC415A978520009D951 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B76D29D15A988150051E308 /* backgrounds */,
+				2B1E2CE115A97AB00009D951 /* camera.png */,
+				2B1E2CE215A97AB00009D951 /* coupon.png */,
+				2B1E2CC515A978520009D951 /* SonicScratch-Info.plist */,
+				2B1E2CC615A978520009D951 /* InfoPlist.strings */,
+				2B1E2CC915A978520009D951 /* main.m */,
+				2B1E2CCB15A978520009D951 /* SonicScratch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B76D29D15A988150051E308 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				2B76D29E15A988150051E308 /* camera.png */,
+				2B76D29F15A988150051E308 /* camera@2x.png */,
+				2B76D2A015A988150051E308 /* camera_overlay.png */,
+				2B76D2A115A988150051E308 /* camera_overlay@2x.png */,
+				2B76D2A215A988150051E308 /* card.png */,
+				2B76D2A315A988150051E308 /* card@2x.png */,
+				2B76D2A415A988150051E308 /* coupon.png */,
+				2B76D2A515A988150051E308 /* coupon@2x.png */,
+				2B76D2A615A988150051E308 /* coupon_buttons.png */,
+				2B76D2A715A988150051E308 /* coupon_buttons@2x.png */,
+				2B76D2A815A988150051E308 /* coupons.png */,
+				2B76D2A915A988150051E308 /* coupons@2x.png */,
+				2B76D2AA15A988150051E308 /* home.png */,
+				2B76D2AB15A988150051E308 /* home@2x.png */,
+				2B76D2AC15A988150051E308 /* intro.png */,
+				2B76D2AD15A988150051E308 /* intro@2x.png */,
+				2B76D2AE15A988150051E308 /* map.png */,
+				2B76D2AF15A988150051E308 /* map@2x.png */,
+				2B76D2B015A988150051E308 /* map_details.png */,
+				2B76D2B115A988150051E308 /* map_details@2x.png */,
+			);
+			path = backgrounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B1E2CB815A978520009D951 /* SonicScratch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1E2CD715A978520009D951 /* Build configuration list for PBXNativeTarget "SonicScratch" */;
+			buildPhases = (
+				2B1E2CB515A978520009D951 /* Sources */,
+				2B1E2CB615A978520009D951 /* Frameworks */,
+				2B1E2CB715A978520009D951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonicScratch;
+			productName = SonicScratch;
+			productReference = 2B1E2CB915A978520009D951 /* SonicScratch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B1E2CB015A978520009D951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2B1E2CB315A978520009D951 /* Build configuration list for PBXProject "SonicScratch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B1E2CAE15A978520009D951;
+			productRefGroup = 2B1E2CBA15A978520009D951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B1E2CB815A978520009D951 /* SonicScratch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B1E2CB715A978520009D951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1E2CC815A978520009D951 /* InfoPlist.strings in Resources */,
+				2B1E2CD115A978520009D951 /* MainStoryboard.storyboard in Resources */,
+				2B1E2CE315A97AB00009D951 /* camera.png in Resources */,
+				2B1E2CE415A97AB00009D951 /* coupon.png in Resources */,
+				2B76D2B215A988150051E308 /* camera.png in Resources */,
+				2B76D2B315A988150051E308 /* camera@2x.png in Resources */,
+				2B76D2B415A988150051E308 /* camera_overlay.png in Resources */,
+				2B76D2B515A988150051E308 /* camera_overlay@2x.png in Resources */,
+				2B76D2B615A988150051E308 /* card.png in Resources */,
+				2B76D2B715A988150051E308 /* card@2x.png in Resources */,
+				2B76D2B815A988150051E308 /* coupon.png in Resources */,
+				2B76D2B915A988150051E308 /* coupon@2x.png in Resources */,
+				2B76D2BA15A988150051E308 /* coupon_buttons.png in Resources */,
+				2B76D2BB15A988150051E308 /* coupon_buttons@2x.png in Resources */,
+				2B76D2BC15A988150051E308 /* coupons.png in Resources */,
+				2B76D2BD15A988150051E308 /* coupons@2x.png in Resources */,
+				2B76D2BE15A988150051E308 /* home.png in Resources */,
+				2B76D2BF15A988150051E308 /* home@2x.png in Resources */,
+				2B76D2C015A988150051E308 /* intro.png in Resources */,
+				2B76D2C115A988150051E308 /* intro@2x.png in Resources */,
+				2B76D2C215A988150051E308 /* map.png in Resources */,
+				2B76D2C315A988150051E308 /* map@2x.png in Resources */,
+				2B76D2C415A988150051E308 /* map_details.png in Resources */,
+				2B76D2C515A988150051E308 /* map_details@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B1E2CB515A978520009D951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1E2CCA15A978520009D951 /* main.m in Sources */,
+				2B1E2CCE15A978520009D951 /* AppDelegate.m in Sources */,
+				2B1E2CD415A978520009D951 /* ViewController.m in Sources */,
+				2B1E2CE015A978990009D951 /* ScratchViewController.m in Sources */,
+				2B1E2CEB15A97C510009D951 /* CameraViewController.m in Sources */,
+				2B76D2C915A991EB0051E308 /* HomeViewController.m in Sources */,
+				2B76D2CC15A999FE0051E308 /* MapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B1E2CC615A978520009D951 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1E2CC715A978520009D951 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B1E2CCF15A978520009D951 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1E2CD015A978520009D951 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B1E2CD515A978520009D951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B1E2CD615A978520009D951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B1E2CD815A978520009D951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicScratch/SonicScratch-Prefix.pch";
+				INFOPLIST_FILE = "SonicScratch/SonicScratch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B1E2CD915A978520009D951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicScratch/SonicScratch-Prefix.pch";
+				INFOPLIST_FILE = "SonicScratch/SonicScratch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B1E2CB315A978520009D951 /* Build configuration list for PBXProject "SonicScratch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1E2CD515A978520009D951 /* Debug */,
+				2B1E2CD615A978520009D951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1E2CD715A978520009D951 /* Build configuration list for PBXNativeTarget "SonicScratch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1E2CD815A978520009D951 /* Debug */,
+				2B1E2CD915A978520009D951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B1E2CB015A978520009D951 /* Project object */;
+}

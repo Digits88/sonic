@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>096C5A11-FF31-4658-AFFF-2DF6EF14F030</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SonicScratch2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>18EF4EFB-37D5-412B-8F4C-0A212F2380D5</key>
+		<string>ssh://github.com/newshorts/sonic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>scratch/Sonic App/SonicScratch2/SonicScratch2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>18EF4EFB-37D5-412B-8F4C-0A212F2380D5</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/newshorts/sonic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>18EF4EFB-37D5-412B-8F4C-0A212F2380D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>18EF4EFB-37D5-412B-8F4C-0A212F2380D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sonic</string>
+		</dict>
+	</array>
+</dict>
+</plist>

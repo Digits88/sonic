@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BB4F0AB15A92F1700524F3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB4F0AA15A92F1700524F3C /* UIKit.framework */; };
+		2BB4F0AD15A92F1700524F3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB4F0AC15A92F1700524F3C /* Foundation.framework */; };
+		2BB4F0AF15A92F1700524F3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB4F0AE15A92F1700524F3C /* CoreGraphics.framework */; };
+		2BB4F0B515A92F1700524F3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BB4F0B315A92F1700524F3C /* InfoPlist.strings */; };
+		2BB4F0B715A92F1700524F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4F0B615A92F1700524F3C /* main.m */; };
+		2BB4F0BB15A92F1700524F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4F0BA15A92F1700524F3C /* AppDelegate.m */; };
+		2BB4F0BE15A92F1700524F3C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB4F0BC15A92F1700524F3C /* MainStoryboard.storyboard */; };
+		2BB4F0C115A92F1700524F3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4F0C015A92F1700524F3C /* ViewController.m */; };
+		2BB4F0CD15A9395700524F3C /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB4F0CB15A9395700524F3C /* camera.png */; };
+		2BB4F0CE15A9395700524F3C /* coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB4F0CC15A9395700524F3C /* coupon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BB4F0A615A92F1700524F3C /* SonicRedraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonicRedraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB4F0AA15A92F1700524F3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BB4F0AC15A92F1700524F3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BB4F0AE15A92F1700524F3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BB4F0B215A92F1700524F3C /* SonicRedraw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonicRedraw-Info.plist"; sourceTree = "<group>"; };
+		2BB4F0B415A92F1700524F3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BB4F0B615A92F1700524F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BB4F0B815A92F1700524F3C /* SonicRedraw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SonicRedraw-Prefix.pch"; sourceTree = "<group>"; };
+		2BB4F0B915A92F1700524F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BB4F0BA15A92F1700524F3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BB4F0BD15A92F1700524F3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2BB4F0BF15A92F1700524F3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BB4F0C015A92F1700524F3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BB4F0CB15A9395700524F3C /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		2BB4F0CC15A9395700524F3C /* coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BB4F0A315A92F1700524F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB4F0AB15A92F1700524F3C /* UIKit.framework in Frameworks */,
+				2BB4F0AD15A92F1700524F3C /* Foundation.framework in Frameworks */,
+				2BB4F0AF15A92F1700524F3C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BB4F09B15A92F1700524F3C = {
+			isa = PBXGroup;
+			children = (
+				2BB4F0B015A92F1700524F3C /* SonicRedraw */,
+				2BB4F0A915A92F1700524F3C /* Frameworks */,
+				2BB4F0A715A92F1700524F3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BB4F0A715A92F1700524F3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BB4F0A615A92F1700524F3C /* SonicRedraw.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BB4F0A915A92F1700524F3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BB4F0AA15A92F1700524F3C /* UIKit.framework */,
+				2BB4F0AC15A92F1700524F3C /* Foundation.framework */,
+				2BB4F0AE15A92F1700524F3C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BB4F0B015A92F1700524F3C /* SonicRedraw */ = {
+			isa = PBXGroup;
+			children = (
+				2BB4F0B915A92F1700524F3C /* AppDelegate.h */,
+				2BB4F0BA15A92F1700524F3C /* AppDelegate.m */,
+				2BB4F0BC15A92F1700524F3C /* MainStoryboard.storyboard */,
+				2BB4F0BF15A92F1700524F3C /* ViewController.h */,
+				2BB4F0C015A92F1700524F3C /* ViewController.m */,
+				2BB4F0B115A92F1700524F3C /* Supporting Files */,
+			);
+			path = SonicRedraw;
+			sourceTree = "<group>";
+		};
+		2BB4F0B115A92F1700524F3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BB4F0CB15A9395700524F3C /* camera.png */,
+				2BB4F0CC15A9395700524F3C /* coupon.png */,
+				2BB4F0B215A92F1700524F3C /* SonicRedraw-Info.plist */,
+				2BB4F0B315A92F1700524F3C /* InfoPlist.strings */,
+				2BB4F0B615A92F1700524F3C /* main.m */,
+				2BB4F0B815A92F1700524F3C /* SonicRedraw-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BB4F0A515A92F1700524F3C /* SonicRedraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB4F0C415A92F1700524F3C /* Build configuration list for PBXNativeTarget "SonicRedraw" */;
+			buildPhases = (
+				2BB4F0A215A92F1700524F3C /* Sources */,
+				2BB4F0A315A92F1700524F3C /* Frameworks */,
+				2BB4F0A415A92F1700524F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonicRedraw;
+			productName = SonicRedraw;
+			productReference = 2BB4F0A615A92F1700524F3C /* SonicRedraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BB4F09D15A92F1700524F3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2BB4F0A015A92F1700524F3C /* Build configuration list for PBXProject "SonicRedraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BB4F09B15A92F1700524F3C;
+			productRefGroup = 2BB4F0A715A92F1700524F3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BB4F0A515A92F1700524F3C /* SonicRedraw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BB4F0A415A92F1700524F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB4F0B515A92F1700524F3C /* InfoPlist.strings in Resources */,
+				2BB4F0BE15A92F1700524F3C /* MainStoryboard.storyboard in Resources */,
+				2BB4F0CD15A9395700524F3C /* camera.png in Resources */,
+				2BB4F0CE15A9395700524F3C /* coupon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BB4F0A215A92F1700524F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB4F0B715A92F1700524F3C /* main.m in Sources */,
+				2BB4F0BB15A92F1700524F3C /* AppDelegate.m in Sources */,
+				2BB4F0C115A92F1700524F3C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BB4F0B315A92F1700524F3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BB4F0B415A92F1700524F3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BB4F0BC15A92F1700524F3C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BB4F0BD15A92F1700524F3C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BB4F0C215A92F1700524F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BB4F0C315A92F1700524F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BB4F0C515A92F1700524F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicRedraw/SonicRedraw-Prefix.pch";
+				INFOPLIST_FILE = "SonicRedraw/SonicRedraw-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BB4F0C615A92F1700524F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicRedraw/SonicRedraw-Prefix.pch";
+				INFOPLIST_FILE = "SonicRedraw/SonicRedraw-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BB4F0A015A92F1700524F3C /* Build configuration list for PBXProject "SonicRedraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB4F0C215A92F1700524F3C /* Debug */,
+				2BB4F0C315A92F1700524F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB4F0C415A92F1700524F3C /* Build configuration list for PBXNativeTarget "SonicRedraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB4F0C515A92F1700524F3C /* Debug */,
+				2BB4F0C615A92F1700524F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BB4F09D15A92F1700524F3C /* Project object */;
+}
