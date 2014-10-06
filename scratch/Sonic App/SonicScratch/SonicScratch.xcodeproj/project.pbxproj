@@ -378,7 +378,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -393,9 +393,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "A28A0C2A-4B95-4B60-A94C-59D126CE250E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A28A0C2A-4B95-4B60-A94C-59D126CE250E";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1abc6e1b-8dda-4ce2-934a-59f74c1ef403";
+				SDKROOT = iphoneos7.1;
 			};
 			name = Debug;
 		};
@@ -405,8 +405,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -415,9 +415,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "D134E7CE-331E-4D44-9DC3-A319AC4E7683";
-				"PROVISIONING_PROFILE[sdk=*]" = "D134E7CE-331E-4D44-9DC3-A319AC4E7683";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1abc6e1b-8dda-4ce2-934a-59f74c1ef403";
+				SDKROOT = iphoneos7.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -425,16 +425,16 @@
 		2B1E2CD815A978520009D951 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SonicScratch/SonicScratch-Prefix.pch";
 				INFOPLIST_FILE = "SonicScratch/SonicScratch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "A28A0C2A-4B95-4B60-A94C-59D126CE250E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A28A0C2A-4B95-4B60-A94C-59D126CE250E";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1abc6e1b-8dda-4ce2-934a-59f74c1ef403";
+				SDKROOT = iphoneos7.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -443,19 +443,58 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Alex Estrovitz (AX84EQFV5V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alex Estrovitz (AX84EQFV5V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SonicScratch/SonicScratch-Prefix.pch";
 				INFOPLIST_FILE = "SonicScratch/SonicScratch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D134E7CE-331E-4D44-9DC3-A319AC4E7683";
-				"PROVISIONING_PROFILE[sdk=*]" = "D134E7CE-331E-4D44-9DC3-A319AC4E7683";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1abc6e1b-8dda-4ce2-934a-59f74c1ef403";
+				SDKROOT = iphoneos7.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
+		};
+		343CAF1819AC6E4900C7786A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "58c599bb-c575-42b8-b40c-82bde21f8909";
+				SDKROOT = iphoneos7.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		343CAF1919AC6E4900C7786A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Estrovitz (S7B6X96X65)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonicScratch/SonicScratch-Prefix.pch";
+				INFOPLIST_FILE = "SonicScratch/SonicScratch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "58c599bb-c575-42b8-b40c-82bde21f8909";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
 		};
 /* End XCBuildConfiguration section */
 
@@ -465,6 +504,7 @@
 			buildConfigurations = (
 				2B1E2CD515A978520009D951 /* Debug */,
 				2B1E2CD615A978520009D951 /* Release */,
+				343CAF1819AC6E4900C7786A /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -474,6 +514,7 @@
 			buildConfigurations = (
 				2B1E2CD815A978520009D951 /* Debug */,
 				2B1E2CD915A978520009D951 /* Release */,
+				343CAF1919AC6E4900C7786A /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
