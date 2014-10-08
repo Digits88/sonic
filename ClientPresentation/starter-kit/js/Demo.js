@@ -250,10 +250,7 @@ var Demo = function(c) {
     this.addCustomSphere = function(path) {
         var geometry = new THREE.SphereGeometry( 50, 32, 32 );
         var texture = new THREE.ImageUtils.loadTexture(path);
-//        texture.wrapS = THREE.RepeatWrapping;
-//        texture.offset.x = -270 / ( 2 * Math.PI );
-//        texture.offset.x = 135;
-        var material = new THREE.MeshLambertMaterial({
+        var material = new THREE.MeshBasicMaterial({
             color: 0xffffff,
             map: texture
         });
@@ -261,8 +258,7 @@ var Demo = function(c) {
         // make it doublesided so we can see it from the inside
         material.side = THREE.DoubleSide;
         var world = new THREE.Mesh(geometry, material);
-        //world.scale.x=-1
-        world.rotation.y = 7;
+        world.rotation.y = 4;
         
         _cardboard.scene.add( world );
     };
